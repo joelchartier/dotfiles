@@ -69,5 +69,8 @@ brew install docker
 brew install docker-compose
 brew install docker-machine
 
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+
 # Remove outdated versions from the cellar.
 brew cleanup
