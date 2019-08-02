@@ -25,6 +25,7 @@ brew install gnu-sed --with-default-names
 brew install gnupg
 
 brew install python
+brew install go
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
