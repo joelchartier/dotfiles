@@ -32,3 +32,4 @@ else
 	fi;
 fi;
 unset installFiles;
+unset installUpdateVundle;
