@@ -42,6 +42,13 @@ brew install autoenv
 brew install git
 brew install tmux
 
+# DEVOPS tools
+brew install ansible
+brew install aws-cli
+brew install aws-iam-authenticator
+brew install kops
+brew install kubectx
+
 # -------------------------------
 # Casks
 # -------------------------------
