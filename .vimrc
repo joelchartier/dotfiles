@@ -20,6 +20,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'stephpy/vim-yaml'
 call vundle#end()
 
 filetype plugin indent on
