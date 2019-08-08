@@ -35,6 +35,9 @@ set smartcase " ... unless they contain at least one capital letter
 colorscheme zenburn 
 set t_Co=256
 
+"" Disable (vim-go) Omnicomplete extra buffer
+set completeopt=menu
+
 " Map F2 to Format JSON files
 "" Thanks to: https://github.com/floranf/"
 map <F2> :%!python -mjson.tool<CR>
