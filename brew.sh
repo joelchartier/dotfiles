@@ -42,6 +42,8 @@ brew install autoenv
 brew install git
 brew install tmux
 
+brew install fzf
+
 # DEVOPS tools
 brew install ansible
 brew install aws-cli

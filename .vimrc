@@ -8,6 +8,7 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/opt/fzf
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -21,6 +22,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'stephpy/vim-yaml'
+Plugin 'junegunn/fzf.vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -52,6 +54,11 @@ let g:go_auto_type_info = 1           " Automatically get signature/type info fo
 " vim-airline
 let g:airline_theme='zenburn'
 let g:airline_powerline_fonts = 1
+
+" fzf. Note: leader is `\`
+nmap ; :Buffers<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>r :Tags<CR>
 
 " Disable arrows
 noremap <Up> <Nop>
