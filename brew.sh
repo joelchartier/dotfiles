@@ -51,6 +51,10 @@ brew install aws-iam-authenticator
 brew install kops
 brew install kubectx
 
+# Useful terminal tools
+brew install jq
+brew install watch
+
 # -------------------------------
 # Casks
 # -------------------------------
