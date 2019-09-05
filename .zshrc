@@ -54,6 +54,8 @@ ZSH_THEME="zsh-themes/tsotra"
 plugins=(git zsh-navigation-tools kube-ps1)
 source $ZSH/oh-my-zsh.sh
 
+# Make sure we load autocompletion
+autoload -U compinit && compinit
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

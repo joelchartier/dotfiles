@@ -33,6 +33,9 @@ set incsearch " incremental searching
 set ignorecase " searches are case insensitive...
 set smartcase " ... unless they contain at least one capital letter
 
+"" Line numbers
+set nu rnu " Use the hybrid relative and absolute line numbering
+
 "" Color scheme
 colorscheme zenburn 
 set t_Co=256

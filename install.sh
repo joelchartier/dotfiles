@@ -18,6 +18,15 @@ function installUpdateTpm() {
 	fi
 }
 
+function installUpdateZshCompletion() {
+  if [ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-completions" ]; then
+		cd ~/.oh-my-zsh/custom/plugins/zsh-completions
+		git pull
+	else
+	  git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+	fi
+}
+
 function installFiles() {
 	rsync --exclude ".git/" \
 		--exclude ".gitignore" \
@@ -33,6 +42,7 @@ if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	installFiles;
 	installUpdateVundle;
 	installUpdateTpm;
+	installUpdateZshCompletion;
 else
 	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
 	echo "";
@@ -40,8 +50,10 @@ else
 		installFiles;
 		installUpdateVundle;
 		installUpdateTpm
+		installUpdateZshCompletion;
 	fi;
 fi;
 unset installFiles;
 unset installUpdateVundle;
 unset installUpdateTpm;
+unset installUpdateCompletion;
