@@ -19,6 +19,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
+Plugin 'rust-lang/rust.vim'
+Plugin 'racer-rust/vim-racer'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'stephpy/vim-yaml'
@@ -35,6 +37,14 @@ set smartcase " ... unless they contain at least one capital letter
 
 "" Line numbers
 set nu rnu " Use the hybrid relative and absolute line numbering
+
+"" Rust
+set hidden
+let g:racer_cmd = "/Users/fanilo/.cargo/bin/racer"
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap gs <Plug>(rust-def-split)
+au FileType rust nmap gx <Plug>(rust-def-vertical)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
 "" Color scheme
 colorscheme zenburn 
