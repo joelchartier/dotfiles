@@ -40,7 +40,8 @@ set nu rnu " Use the hybrid relative and absolute line numbering
 
 "" Rust
 set hidden
-let g:racer_cmd = "/Users/fanilo/.cargo/bin/racer"
+let g:racer_cmd = "$HOME/.cargo/bin/racer"
+let g:rustfmt_autosave = 1
 au FileType rust nmap gd <Plug>(rust-def)
 au FileType rust nmap gs <Plug>(rust-def-split)
 au FileType rust nmap gx <Plug>(rust-def-vertical)
