@@ -7,7 +7,7 @@ export ZSH=/Users/${USER}/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="zsh-themes/tsotra"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ ZSH_THEME="zsh-themes/tsotra"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-navigation-tools kube-ps1)
+plugins=(git docker vscode)
 source $ZSH/oh-my-zsh.sh
 
 # Make sure we load autocompletion
@@ -86,17 +86,15 @@ autoload -U compinit && compinit
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $(brew --prefix autoenv)/activate.sh
 
+##########
+# GOLANG #
+##########
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 
-function figlet_func() {
-	(echo "\`\`\`" && figlet "$1" && echo "\`\`\`") | pbcopy
-}
-
-alias f=figlet_func
-
-alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
-
+#######
+# K8S #
+#######
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
