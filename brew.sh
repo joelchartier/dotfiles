@@ -38,6 +38,7 @@ brew cask install font-fira-code
 # DEV TOOLS #
 #############
 brew install git
+brew install git-secret
 brew cask install google-chrome
 brew cask install slack
 brew cask install spotify
@@ -56,6 +57,7 @@ brew cask install alfred
 # NODE #
 ########
 # brew install node
+# brew install nvm
 
 #############
 # DATABASES #
@@ -66,10 +68,13 @@ brew cask install alfred
 # DEVOPS #
 ##########
 # brew install ansible
-# brew install aws-cli
+# brew install awscli
 # brew install aws-iam-authenticator
 # brew install kops
 # brew install kubectx
+# brew install kubernetes-cli
+# brew cask install minikube
+# brew install tfenv
 
 ##########
 # DOCKER #

@@ -93,6 +93,13 @@ export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 
+##########
+# NODEJS #
+##########
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+
 #######
 # K8S #
 #######
