@@ -53,6 +53,12 @@ brew cask install alfred
 # sudo python -m ensurepip --default-pip
 # sudo pip install --upgrade pip
 
+#############
+# GPG UTILS #
+#############
+brew install paperkey
+brew install libqrencode
+
 ######## 
 # NODE #
 ########
