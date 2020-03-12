@@ -33,6 +33,7 @@ brew install git-lfs
 brew install ssh-copy-id
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #############
 # DEV TOOLS #
@@ -62,8 +63,8 @@ brew install libqrencode
 ######## 
 # NODE #
 ########
-# brew install node
-# brew install nvm
+brew install node
+brew install nvm
 
 #############
 # DATABASES #
@@ -81,13 +82,14 @@ brew install libqrencode
 # brew install kubernetes-cli
 # brew cask install minikube
 # brew install tfenv
+# brew install serverless
 
 ##########
 # DOCKER #
 ##########
-# brew install docker
-# brew install docker-compose
-# brew install docker-machine
+brew install docker
+brew install docker-compose
+brew install docker-machine
 
 # Remove outdated versions from the cellar.
 brew cleanup
