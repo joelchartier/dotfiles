@@ -18,7 +18,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install findutils
 brew install gnu-sed
 brew install gnupg
-brew install wget --with-iri
+brew install wget
 brew install curl
 brew install vim
 brew install grep
@@ -27,12 +27,12 @@ brew install autoenv
 brew install fzf
 brew install jq
 brew install watch
-brew install vim --with-override-system-vi
+brew install vim
 brew install tmux
 brew install git-lfs
 brew install ssh-copy-id
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #############
@@ -40,11 +40,17 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #############
 brew install git
 brew install git-secret
-brew cask install google-chrome
-brew cask install slack
-brew cask install spotify
-brew cask install evernote
-brew cask install alfred
+brew install git-crypt
+brew install --cask google-chrome
+brew install --cask brave-browser
+brew install --cask slack
+brew install --cask spotify
+brew install --cask notion
+brew install --cask alfred
+brew install --cask spectacle
+brew install --cask openvpn-connect
+brew install --cask visual-studio-code
+brew install --cask caffeine
 
 ###########
 # PYTHON3 #
@@ -57,6 +63,7 @@ brew cask install alfred
 #############
 # GPG UTILS #
 #############
+brew install gpg
 brew install paperkey
 brew install libqrencode
 
@@ -74,7 +81,7 @@ brew install nvm
 ##########
 # DEVOPS #
 ##########
-# brew install ansible
+brew install ansible
 # brew install awscli
 # brew install aws-iam-authenticator
 # brew install kops
