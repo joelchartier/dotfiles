@@ -33,6 +33,7 @@ brew install git-lfs
 brew install ssh-copy-id
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
+brew install telnet
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #############
@@ -41,16 +42,28 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 brew install git
 brew install git-secret
 brew install git-crypt
+brew install --cask openvpn-connect
+brew install --cask visual-studio-code
+brew install --cask pgadmin4
+brew install --cask postman
+
+########
+# DATA #
+########
+brew tap dbt-labs/dbt
+brew install dbt-postgres
+
+###################
+# USABILITY TOOLS #
+###################
 brew install --cask google-chrome
 brew install --cask brave-browser
+brew install --cask caffeine
 brew install --cask slack
 brew install --cask spotify
 brew install --cask notion
 brew install --cask alfred
 brew install --cask spectacle
-brew install --cask openvpn-connect
-brew install --cask visual-studio-code
-brew install --cask caffeine
 
 ###########
 # PYTHON3 #
@@ -73,20 +86,14 @@ brew install libqrencode
 brew install node
 brew install nvm
 
-#############
-# DATABASES #
-#############
-# brew install postgresql@10
-
 ##########
 # DEVOPS #
 ##########
 brew install ansible
-# brew install awscli
+brew install awscli
 # brew install aws-iam-authenticator
-# brew install kops
-# brew install kubectx
-# brew install kubernetes-cli
+brew install kops
+brew install kubectx
 # brew cask install minikube
 # brew install tfenv
 # brew install serverless
