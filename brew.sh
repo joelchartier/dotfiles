@@ -91,11 +91,12 @@ brew install nvm
 ##########
 brew install ansible
 brew install awscli
-# brew install aws-iam-authenticator
+
 brew install kops
 brew install kubectx
+# brew install aws-iam-authenticator
 # brew cask install minikube
-# brew install tfenv
+brew install tfenv
 # brew install serverless
 
 ##########
