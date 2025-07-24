@@ -31,6 +31,7 @@ brew install vim
 brew install tmux
 brew install git-lfs
 brew install ssh-copy-id
+brew install zsh
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 brew install telnet
@@ -46,6 +47,9 @@ brew install --cask openvpn-connect
 brew install --cask visual-studio-code
 brew install --cask pgadmin4
 brew install --cask postman
+brew install plantuml
+brew install ngrok
+
 
 ########
 # DATA #
@@ -64,14 +68,7 @@ brew install --cask spotify
 brew install --cask notion
 brew install --cask alfred
 brew install --cask spectacle
-
-###########
-# PYTHON3 #
-###########
-# brew install pyenv
-# brew install python3
-# sudo python -m ensurepip --default-pip
-# sudo pip install --upgrade pip
+brew install --cask rectangle
 
 #############
 # GPG UTILS #
@@ -87,13 +84,27 @@ brew install node
 brew install nvm
 
 ##########
+# GOLANG #
+##########
+brew install go
+
+###########
+# PYTHON3 #
+###########
+brew install pyenv
+
+##########
 # DEVOPS #
 ##########
 brew install ansible
 brew install awscli
-
+brew install kubectl
 brew install kops
 brew install kubectx
+brew install kube-ps1
+brew install helm
+brew install kind
+brew install k9s
 # brew install aws-iam-authenticator
 # brew cask install minikube
 brew install tfenv
